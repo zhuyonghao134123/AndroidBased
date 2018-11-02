@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         const val EXTRA_MESSAGE = "com.zyh.android.based.MESSAGE"
+        internal const val PICK_CONTACT_REQUEST = 0
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     /** Called when the user taps the Send button */
-    fun sendMessage() {
+    private fun sendMessage() {
         val intent = Intent(this, DisplayMessageActivity::class.java)
         val message = editText.text.toString()
 
