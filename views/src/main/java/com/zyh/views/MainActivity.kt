@@ -3,6 +3,7 @@ package com.zyh.views
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.zyh.views.cardview.CardViewActivity
 import com.zyh.views.recyclerview.RecycleViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -15,12 +16,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-        /**
-         * RecycleView
-         */
+        //RecyclerView
         buttonRecycleView.setOnClickListener {
             startActivity(Intent(this,RecycleViewActivity::class.java))
+        }
+
+        //CardView
+        buttonCardView.setOnClickListener {
+            startActivity(Intent(this,CardViewActivity::class.java))
         }
     }
 }

@@ -21,13 +21,17 @@
         <activity
             android:name=".recyclerview.RecycleViewActivity"
             android:parentActivityName=".MainActivity">
-
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".recyclerview.SampleRecyclerViewActivity"></activity>
+        <activity
+            android:name=".recyclerview.SampleRecyclerViewActivity"
+            android:parentActivityName=".recyclerview.RecycleViewActivity" />
+        <activity
+            android:name=".cardview.CardViewActivity"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

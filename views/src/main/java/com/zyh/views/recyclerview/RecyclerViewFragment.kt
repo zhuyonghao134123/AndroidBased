@@ -37,7 +37,7 @@ class RecyclerViewFragment : Fragment() {
      * 初始化数据
      */
     private fun initDataSet(){
-        dataSet= Array(DATASET_COUNT) { i -> "This is element # $i" }
+        dataSet= Array(DATA_COUNT) { i -> "This is element # $i" }
     }
 
     override fun onCreateView(
@@ -115,7 +115,7 @@ class RecyclerViewFragment : Fragment() {
 
     companion object {
         private const val TAG = "RecyclerViewFragment"
-        private const val DATASET_COUNT = 60
+        private const val DATA_COUNT = 60
         private const val SPAN_COUNT = 2
         private const val KEY_LAYOUT_MANAGER = "layoutManager"
     }
