@@ -1,9 +1,7 @@
 package com.zyh.activity.fragment
 
-import android.net.Uri
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import android.support.v7.app.AppCompatActivity
 import com.zyh.activity.R
 import kotlinx.android.synthetic.main.activity_fragment_basic.*
 

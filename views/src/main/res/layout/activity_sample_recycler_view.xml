@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sample_recycler_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".recyclerview.SampleRecyclerViewActivity">
+
+
+    <ViewAnimator
+        android:id="@+id/sample_output"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            style="@style/Widget.SampleMessageTile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/Widget.SampleMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/text_margin"
+                android:paddingTop="@dimen/text_margin"
+                android:paddingEnd="@dimen/text_margin"
+                android:paddingBottom="@dimen/text_margin"
+                android:text="@string/intro_message" />
+
+        </ScrollView>
+
+        <fragment
+            android:id="@+id/log_fragment"
+            android:name="com.zyh.views.common.logger.LogFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ViewAnimator>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <FrameLayout
+        android:id="@+id/sample_content_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+</LinearLayout>

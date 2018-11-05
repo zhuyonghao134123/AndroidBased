@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Views</string>
+    <string name="recycle_view">RecycleView</string>
+
+    <string name="recycle_fragment_list">新建Fragment(list)模版</string>
+    <string name="recycle_demo_official">RecycleView官方Demo</string>
+
+    <string name="grid_layout_manager">Grid Layout Manager</string>
+    <string name="linear_layout_manager">Linear Layout Manager</string>
+
+    <string name="sample_show_log">Show Log</string>
+    <string name="sample_hide_log">Hide Log</string>
+
+</resources>
