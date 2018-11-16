@@ -8,7 +8,7 @@ import android.widget.TextView
 import com.zyh.views.R
 import com.zyh.views.common.logger.Log
 
-class CustomAdapter(private val dataSet:Array<String>):RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+class SampleCustomAdapter(private val dataSet:Array<String>):RecyclerView.Adapter<SampleCustomAdapter.ViewHolder>() {
 
     class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
         var textView:TextView
@@ -19,7 +19,7 @@ class CustomAdapter(private val dataSet:Array<String>):RecyclerView.Adapter<Cust
         }
     }
 
-    override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): CustomAdapter.ViewHolder {
+    override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): SampleCustomAdapter.ViewHolder {
         // Create a new view.
         val view = LayoutInflater.from(viewGroup.context).inflate(R.layout.text_row_item,viewGroup,false)
         return ViewHolder(view)
@@ -36,6 +36,6 @@ class CustomAdapter(private val dataSet:Array<String>):RecyclerView.Adapter<Cust
     }
 
     companion object {
-        private const val TAG = "CustomAdapter"
+        private const val TAG = "SampleCustomAdapter"
     }
 }

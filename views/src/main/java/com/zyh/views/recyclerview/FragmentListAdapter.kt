@@ -8,7 +8,7 @@ import android.widget.TextView
 import com.zyh.views.R
 
 
-import com.zyh.views.recyclerview.ItemFragment.OnListFragmentInteractionListener
+import com.zyh.views.recyclerview.FragmentListItem.OnListFragmentInteractionListener
 import com.zyh.views.recyclerview.dummy.DummyContent.DummyItem
 
 import kotlinx.android.synthetic.main.fragment_item.view.*
@@ -18,10 +18,10 @@ import kotlinx.android.synthetic.main.fragment_item.view.*
  * specified [OnListFragmentInteractionListener].
  * TODO: Replace the implementation with code for your data type.
  */
-class MyItemRecyclerViewAdapter(
+class FragmentListAdapter(
     private val mValues: List<DummyItem>,
     private val mListener: OnListFragmentInteractionListener?
-) : RecyclerView.Adapter<MyItemRecyclerViewAdapter.ViewHolder>() {
+) : RecyclerView.Adapter<FragmentListAdapter.ViewHolder>() {
 
     private val mOnClickListener: View.OnClickListener
 

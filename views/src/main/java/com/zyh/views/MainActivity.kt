@@ -3,8 +3,10 @@ package com.zyh.views
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Adapter
+import android.widget.AdapterView
 import com.zyh.views.cardview.CardViewActivity
-import com.zyh.views.recyclerview.RecycleViewActivity
+import com.zyh.views.recyclerview.RecyclerViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 /**
@@ -18,12 +20,14 @@ class MainActivity : AppCompatActivity() {
 
         //RecyclerView
         buttonRecycleView.setOnClickListener {
-            startActivity(Intent(this,RecycleViewActivity::class.java))
+            startActivity(Intent(this,RecyclerViewActivity::class.java))
         }
 
         //CardView
         buttonCardView.setOnClickListener {
             startActivity(Intent(this,CardViewActivity::class.java))
         }
+
+
     }
 }

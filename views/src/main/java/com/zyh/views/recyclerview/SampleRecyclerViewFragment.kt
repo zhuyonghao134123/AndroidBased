@@ -17,7 +17,7 @@ import com.zyh.views.R
  * A simple [Fragment] subclass.
  *
  */
-class RecyclerViewFragment : Fragment() {
+class SampleRecyclerViewFragment : Fragment() {
 
     private lateinit var currentLayoutManagerType: LayoutManagerType
     private lateinit var layoutManager: RecyclerView.LayoutManager
@@ -63,8 +63,8 @@ class RecyclerViewFragment : Fragment() {
 
         setRecycleViewLayoutManager(currentLayoutManagerType)
 
-        // Set CustomAdapter as the adapter for RecyclerView.
-        recyclerView.adapter=CustomAdapter(dataSet)
+        // Set SampleCustomAdapter as the adapter for RecyclerView.
+        recyclerView.adapter=SampleCustomAdapter(dataSet)
 
         rootView.findViewById<RadioButton>(R.id.linear_layout_rb).setOnClickListener {
             setRecycleViewLayoutManager(LayoutManagerType.LINEAR_LAYOUT_MANAGER)
@@ -91,18 +91,18 @@ class RecyclerViewFragment : Fragment() {
         }
 
         when(layoutManagerType){
-            RecyclerViewFragment.LayoutManagerType.LINEAR_LAYOUT_MANAGER->{
+            SampleRecyclerViewFragment.LayoutManagerType.LINEAR_LAYOUT_MANAGER->{
                 layoutManager=LinearLayoutManager(activity)
                 currentLayoutManagerType=LayoutManagerType.LINEAR_LAYOUT_MANAGER
             }
-            RecyclerViewFragment.LayoutManagerType.GRID_LAYOUT_MANAGER->{
+            SampleRecyclerViewFragment.LayoutManagerType.GRID_LAYOUT_MANAGER->{
                 layoutManager=GridLayoutManager(activity,SPAN_COUNT)
                 currentLayoutManagerType=LayoutManagerType.GRID_LAYOUT_MANAGER
             }
         }
 
         with(recyclerView){
-            layoutManager=this@RecyclerViewFragment.layoutManager
+            layoutManager=this@SampleRecyclerViewFragment.layoutManager
             scrollToPosition(scrollPosition)
         }
     }
@@ -114,7 +114,7 @@ class RecyclerViewFragment : Fragment() {
     }
 
     companion object {
-        private const val TAG = "RecyclerViewFragment"
+        private const val TAG = "SampleRecyclerViewFragment"
         private const val DATA_COUNT = 60
         private const val SPAN_COUNT = 2
         private const val KEY_LAYOUT_MANAGER = "layoutManager"

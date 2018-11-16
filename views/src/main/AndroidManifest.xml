@@ -19,8 +19,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".recyclerview.RecycleViewActivity"
+            android:name=".recyclerview.RecyclerViewActivity"
             android:parentActivityName=".MainActivity">
+
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -28,9 +29,12 @@
         </activity>
         <activity
             android:name=".recyclerview.SampleRecyclerViewActivity"
-            android:parentActivityName=".recyclerview.RecycleViewActivity" />
+            android:parentActivityName=".recyclerview.RecyclerViewActivity" />
         <activity
             android:name=".cardview.CardViewActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".recyclerview.FragmentListActivity"
             android:parentActivityName=".MainActivity" />
     </application>
 

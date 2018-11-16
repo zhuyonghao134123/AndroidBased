@@ -24,7 +24,7 @@ class SampleRecyclerViewActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sample_recycler_view)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction().run {
-                replace(R.id.sample_content_fragment, RecyclerViewFragment())
+                replace(R.id.sample_content_fragment, SampleRecyclerViewFragment())
                 commit()
             }
         }

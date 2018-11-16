@@ -1,1 +1,1 @@
-include ':app', ':activity', ':views'
+include ':app', ':activity', ':views', ':connectivity', ':bestopensourcedemo'

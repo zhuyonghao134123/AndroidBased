@@ -17,7 +17,7 @@ import com.zyh.views.recyclerview.dummy.DummyContent.DummyItem
 /**
  * A fragment representing a list of Items.
  */
-class ItemFragment : Fragment() {
+class FragmentListItem : Fragment() {
 
     // TODO: Customize parameters
     private var columnCount = 1
@@ -44,7 +44,7 @@ class ItemFragment : Fragment() {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
-                adapter = MyItemRecyclerViewAdapter(DummyContent.ITEMS, listener)
+                adapter = FragmentListAdapter(DummyContent.ITEMS, listener)
             }
         }
         return view
@@ -78,7 +78,7 @@ class ItemFragment : Fragment() {
         // TODO: Customize parameter initialization
         @JvmStatic
         fun newInstance(columnCount: Int) =
-            ItemFragment().apply {
+            FragmentListItem().apply {
                 arguments = Bundle().apply {
                     putInt(ARG_COLUMN_COUNT, columnCount)
                 }

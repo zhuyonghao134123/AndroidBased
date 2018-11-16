@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BestOpenSourceDemo</string>
+    <string name="title_network">网络</string>
+    <string name="title_image">图片</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="okhttp">OkHttp</string>
+    <string name="request_get_synchronous">Get同步请求</string>
+    <string name="request_get_asynchronous">Get异步请求</string>
+    <string name="request_post">Post请求</string>
+    <string name="retrofit">Retrofit</string>
+    <string name="RxJava">RxJava</string>
+    <string name="rx_android_sample">RxAndroidSample</string>
+    <string name="button_run_scheduler">Run Schedulers Example</string>
+</resources>
